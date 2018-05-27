@@ -18,3 +18,11 @@ test('User should be John Wick object', () => {
         lastName: 'Wick'
     });
 });
+
+// Less than & greater than
+test('Should be under 1000', () => {
+    const abc = 400;
+    const xyz = 500;
+    // expect(abc + xyz).toBeLessThan(1000);
+    expect(abc + xyz).toBeLessThanOrEqual(1000);
+});
