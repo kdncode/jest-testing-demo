@@ -11,3 +11,10 @@ test('Should be null', () => {
 test('Should be falsy', () => {
     expect(functions.checkValue(undefined)).toBeFalsy();
 });
+
+test('User should be John Wick object', () => {
+    expect(functions.createUser()).toEqual({
+        firstName: 'John',
+        lastName: 'Wick'
+    });
+});
