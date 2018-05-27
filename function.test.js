@@ -26,3 +26,8 @@ test('Should be under 1000', () => {
     // expect(abc + xyz).toBeLessThan(1000);
     expect(abc + xyz).toBeLessThanOrEqual(1000);
 });
+
+// Regex
+test('There is no A in hello', () => {
+    expect('hello').not.toMatch(/A/);
+})
