@@ -7,3 +7,7 @@ test('Add 2 + 1 to equal 3', () => {
 test('Should be null', () => {
     expect(functions.isNull()).toBeNull();
 });
+
+test('Should be falsy', () => {
+    expect(functions.checkValue(undefined)).toBeFalsy();
+});
