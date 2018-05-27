@@ -12,12 +12,19 @@ test('Should be falsy', () => {
     expect(functions.checkValue(undefined)).toBeFalsy();
 });
 
+// Object
 test('User should be John Wick object', () => {
     expect(functions.createUser()).toEqual({
         firstName: 'John',
         lastName: 'Wick'
     });
 });
+
+// Array
+test('Admin should be in usernames array', () => {
+    usernames = ['admin', 'user1', 'user2'];
+    expect(usernames).toContain('admin');
+})
 
 // Less than & greater than
 test('Should be under 1000', () => {
